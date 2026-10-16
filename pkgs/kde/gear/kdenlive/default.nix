@@ -17,6 +17,7 @@
   opentimelineio,
   frei0r,
   qtimageformats,
+  wrapGAppsHook3,
 }:
 mkKdeDerivation {
   pname = "kdenlive";
@@ -37,6 +38,7 @@ mkKdeDerivation {
   extraNativeBuildInputs = [
     pkg-config
     shared-mime-info
+    wrapGAppsHook3
   ];
 
   extraBuildInputs = [
